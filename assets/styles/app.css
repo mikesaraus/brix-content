@@ -1,0 +1,126 @@
+@import url(variable.css);
+.brix .subtitle {
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.brix .icon {
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: var(--nav-icon-bg);
+}
+
+.brix .icon>i {
+    font-size: 1.5rem;
+}
+
+.brix .nav-item:not(:first-child, :last-child) {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.brix .nav-item:first-child {
+    margin-bottom: 12px;
+}
+
+.brix .nav-item:last-child {
+    margin-top: 12px;
+}
+
+.brix .nav-item:hover>.nav-link,
+.brix .nav-item>.nav-link.active {
+    border-color: var(--bs-primary);
+    box-shadow: 0 2px 12px 0 rgba(20, 20, 43, 0.08);
+}
+
+.brix .nav-item>.nav-link {
+    padding: 16px 32px;
+    border: 2px solid transparent;
+    border-radius: 14px;
+    box-shadow: 0 2px 6px 0 rgba(20, 20, 43, 0.06);
+    -webkit-transition: box-shadow 300ms ease, border-width 300ms ease, border-color 300ms ease, color 300ms ease;
+    transition: box-shadow 300ms ease, border-width 300ms ease, border-color 300ms ease, color 300ms ease;
+}
+
+.brix .nav-item>.nav-link {
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+}
+
+.brix .tab-menu {
+    display: flex;
+    width: 100%;
+    max-width: 348px;
+    margin-right: 40px;
+    margin-bottom: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.brix .tab-menu>.nav {
+    width: 100%;
+}
+
+.brix .card {
+    overflow: visible;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--card-border-color);
+    border-radius: 24px;
+    box-shadow: 0 2px 12px 0 rgba(20, 20, 43, 0.08);
+}
+
+.brix .card .card-text {
+    color: var(--card-text-color);
+}
+
+.brix .card .card-bottom>img {
+    width: 100%;
+    border-radius: 24px;
+}
+
+.brix .tab-section {
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+    transform-style: preserve-3d;
+}
+
+@media screen and (max-width: 767px) {
+    .brix .tab-menu {
+        max-width: 100%;
+        margin-right: 0px;
+        margin-bottom: 40px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: stretch;
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+    }
+    .brix .tab-section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
